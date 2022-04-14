@@ -207,6 +207,7 @@ footer p {
 
 }
 .sponsors {
+    padding-top: 2rem;
     background: rgb(31, 0, 82);
     background: -moz-linear-gradient(180deg,
         rgba(31, 0, 82, 1) 0%,
@@ -226,7 +227,7 @@ footer p {
     /* Create the parallax scrolling effect */
   }
   .sponsors h1{
-    font-size: 10vw !important;
+    font-size: 5vw !important;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
