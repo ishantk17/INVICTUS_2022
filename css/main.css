@@ -175,12 +175,12 @@ footer {
     padding: 15px;
 }
 
-footer p {
+/* footer p {
     color: #f1f1f1;
     font-size: 0.9em;
     margin: 0;
     padding: 0;
-}
+} */
 
 @media screen and (max-width: 400px) {
     .countdown {
@@ -335,6 +335,18 @@ footer p {
   .sponsors{
       margin-bottom: 0px;
       padding-bottom: 50px;
+  }
+  .footer{
+    color: white;
+    font-family: 'Ubuntu';
+    font-size: 1.25rem;
+    height: 200px;
+    padding: 40px 0;
+  }
+  
+  .ico{
+    color: white;
+    margin: 20px 10px;
   }
 
 
