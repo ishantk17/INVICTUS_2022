@@ -61,12 +61,6 @@ div.card > a {
     background-color: #263238;
 }
 
-.card {
-    display: inline-block;
-    margin: 10px;
-    width: 20rem;
-    max-width: 100%;
-}
 
 .carousel-inner {
     height: 80vh;
@@ -120,6 +114,7 @@ span.date_card {
     overflow: hidden;
     height: 305px;
     cursor: pointer;
+    margin-bottom:20px;
 }
 
 .img-card {
@@ -221,7 +216,7 @@ footer p {
     height: auto;
     overflow: hidden;
     margin-bottom: 30px;
-  
+
     /* Create the parallax scrolling effect */
   }
   .sponsors h1{
@@ -242,7 +237,7 @@ footer p {
     max-width: 250px;
     max-height: 150px;
     margin: 3em 2%;
-  
+
   }
   .contact {
     background: rgb(0, 0, 0);
@@ -273,7 +268,7 @@ footer p {
     float: left;
     margin-right: 0.5em;
     font-size: 20px !important;
-  
+
   }
   .social-media span, .numbers span {
     font-size: 20px !important;
@@ -283,7 +278,7 @@ footer p {
     font-size: 40px;
     float: left;
   }
-  
+
   .mail,.insta,.numbers li {
     display: flex;
     justify-content: space-around;
@@ -335,4 +330,8 @@ footer p {
       padding-bottom: 50px;
   }
 
-  
+
+
+.date_card:hover{
+  font-weight: bold;
+}
