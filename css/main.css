@@ -260,11 +260,15 @@ footer {
   .mainflex{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 60px 40px;
     flex-wrap: wrap;
   }
-  .flex1, .flex2 {
-    width: 100%;
+  .flex1{
+    float: left;
+    width: 50%;
+  }
+  .flex2{
+    width: 50%;
   }
   .instaIcon{
     float: left;
@@ -327,7 +331,8 @@ footer {
       margin-top: 0px;
   }
   #ContactUsH{
-    font-size: 10vw !important;
+    padding-top: 40px;
+    font-size: 5vw !important;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
