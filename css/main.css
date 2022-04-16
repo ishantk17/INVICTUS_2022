@@ -61,14 +61,20 @@ div.card > a {
     background-color: #263238;
 }
 
+.card {
+    display: inline-block;
+    margin: 10px;
+    width: 20rem;
+    max-width: 100%;
+}
 
 .carousel-inner {
     height: 80vh;
 }
 
 span.date_card {
+    border: 1px solid #ffffff;
     background-color: #152127;
-    border-radius: 5%;
     opacity: 0.7;
     padding: 5px 8px;
 }
@@ -135,11 +141,6 @@ span.date_card {
 
 .body-card {
     color: white;
-}
-
-
-.card-body{
-  text-align: center;
 }
 
 .card img {
@@ -223,7 +224,7 @@ footer {
     height: auto;
     overflow: hidden;
     margin-bottom: 30px;
-
+  
     /* Create the parallax scrolling effect */
   }
   .sponsors h1{
@@ -241,11 +242,19 @@ footer {
     background-color: rgb(40, 0, 148);
   }
   .logo-containerUnique img {
-    max-width: 250px;
-    max-height: 150px;
+    /* max-width: 250px;
+    max-height: 150px; */
+    width: 150px;
+    height: 150px;
     margin: 3em 2%;
-
+    opacity: 0.3;
+    -webkit-transition: 0.5s all linear;
+            transition: 0.5s all linear;
   }
+  .logo-containerUnique img:hover{
+    opacity: 1;
+  }
+
   .contact {
     background: rgb(0, 0, 0);
     height: auto;
@@ -266,9 +275,16 @@ footer {
   .flex1{
     float: left;
     width: 50%;
+    padding: 100px 0 0 80px;
   }
   .flex2{
     width: 50%;
+  }
+  .flex2 iframe{
+      height: 350px;
+      width: 500px;
+      position: relative;
+      right: 100px;
   }
   .instaIcon{
     float: left;
@@ -279,7 +295,7 @@ footer {
     float: left;
     margin-right: 0.5em;
     font-size: 20px !important;
-
+  
   }
   .social-media span, .numbers span {
     font-size: 20px !important;
@@ -289,7 +305,7 @@ footer {
     font-size: 40px;
     float: left;
   }
-
+  
   .mail,.insta,.numbers li {
     display: flex;
     justify-content: space-around;
@@ -354,14 +370,6 @@ footer {
     margin: 20px 10px;
   }
 
-
-
-.date_card:hover{
-  font-weight: bold;
-  color:white;
-}
-.btn-inv{
-  border-radius:10%;
   
 }
 
