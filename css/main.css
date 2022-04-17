@@ -346,3 +346,121 @@ footer p {
   border-radius:10%;
   
 }
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* .section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #012970;
+  text-transform: uppercase;
+} */
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+@media (max-width: 768px) {
+  .section-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+
+/* hover css */
+.partner {
+  background-color: #f8f8f8;
+}
+.partner .partner-box {
+  display: block;
+  opacity: 0.3;
+  height: 150px;
+  width: 150px;
+  margin: 25px auto;
+  -webkit-transition: 0.5s all linear;
+          transition: 0.5s all linear;
+}
+.partner .partner-box:hover {
+  opacity: 1;
+}
+.partner .partner-box-1 {
+  background: url(../img/dcoder.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-2 {
+  background: url(../img/download.png) no-repeat center center/contain;
+}
+.partner .partner-box-3 {
+  background: url(../img/hovercss_imgs/neural\ ai.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-4 {
+  background: url(../img/IEEE_DTU_Logo.png) no-repeat center center/contain;
+}
+.partner .partner-box-5 {
+  background: url(../img/site_dtu.jpg) no-repeat center center/contain;
+}
+.partner .partner-box-6 {
+  background: url(../img/hovercss_imgs/sr_dtu.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-7 {
+  background: url(../img/partner-1.png) no-repeat center center/contain;
+}
+.partner .partner-box-8 {
+  background: url(../img/partner-4.png) no-repeat center center/contain;
+}
+
+/* about css */
+
+.about {
+  padding: 120px 0;
+}
+.about .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c4964;
+}
+.about .content ul {
+  text-align: justify;
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  padding-bottom: 10px;
+}
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5846f9;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  position: relative;
+}
+.about .content .read-more:hover {
+  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+}
+.about .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
