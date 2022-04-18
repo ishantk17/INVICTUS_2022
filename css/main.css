@@ -207,64 +207,86 @@ footer p {
 
 }
 .sponsors {
-    background: rgb(31, 0, 82);
-    background: -moz-linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    background: -webkit-linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    text-align: center;
-    /* Full height */
-    height: auto;
-    overflow: hidden;
-    margin-bottom: 30px;
+  padding-top: 2rem;
+  background-color: #f8f8f8;
+  /* background: rgb(31, 0, 82);
+  background: -moz-linear-gradient(180deg,
+      rgba(31, 0, 82, 1) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(180deg,
+      rgba(31, 0, 82, 1) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(180deg,
+      rgba(31, 0, 82, 1) 0%,
+      rgba(0, 0, 0, 1) 100%); */
+  text-align: center;
+  /* Full height */
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 30px;
 
-    /* Create the parallax scrolling effect */
-  }
-  .sponsors h1{
-    font-size: 10vw !important;
-    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    color: white;
-  }
-  .sponsors button {
-    border-radius: 30px;
-    padding: 20px;
-    border: 0px;
-    font-weight: 900 !important;
-    color: #fff;
-    background-color: rgb(40, 0, 148);
-  }
-  .logo-containerUnique img {
-    max-width: 250px;
-    max-height: 150px;
-    margin: 3em 2%;
+  /* Create the parallax scrolling effect */
+}
+.sponsors h1{
+  font-size: 5vw !important;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: rgb(40, 0, 148);
+}
+.sponsors button {
+  border-radius: 30px;
+  padding: 20px;
+  border: 0px;
+  font-weight: 900 !important;
+  color: #fff;
+  background-color: rgb(40, 0, 148);
+}
+.logo-containerUnique img {
+  /* max-width: 250px;
+  max-height: 150px; */
+  width: 150px;
+  height: 150px;
+  margin: 3em 2%;
+  opacity: 0.3;
+  -webkit-transition: 0.5s all linear;
+          transition: 0.5s all linear;
+}
+.logo-containerUnique img:hover{
+  opacity: 1;
+}
 
-  }
-  .contact {
-    background: rgb(0, 0, 0);
-    height: auto;
-    padding-bottom: 3rem;
-    background: rgb(12, 63, 159);
-    background: -moz-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3f9f", endColorstr="#000000", GradientType=1);
-    text-align: center;
-  }
-  .mainflex{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-    flex-wrap: wrap;
-  }
-  .flex1, .flex2 {
-    width: 100%;
-  }
+.contact {
+  background: rgb(0, 0, 0);
+  height: auto;
+  padding-bottom: 3rem;
+  background: rgb(12, 63, 159);
+  background: -moz-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3f9f", endColorstr="#000000", GradientType=1);
+  text-align: center;
+}
+.mainflex{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 40px;
+  flex-wrap: wrap;
+}
+.flex1{
+  float: left;
+  width: 50%;
+  padding: 100px 0 0 80px;
+}
+.flex2{
+  width: 50%;
+}
+.flex2 iframe{
+    height: 350px;
+    width: 500px;
+    position: relative;
+    right: 100px;
+}
+
   .instaIcon{
     float: left;
     font-size: 20px;
@@ -326,16 +348,12 @@ footer p {
       margin-top: 0px;
   }
   #ContactUsH{
-    font-size: 10vw !important;
+    padding-top: 40px;
+    font-size: 5vw !important;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
   }
-  .sponsors{
-      margin-bottom: 0px;
-      padding-bottom: 50px;
-  }
-
 
 
 .date_card:hover{
@@ -463,4 +481,17 @@ footer p {
   position: absolute;
   right: 20px;
   top: 12px;
+}
+
+.footer{
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 1.25rem;
+  height: 200px;
+  padding: 40px 0;
+}
+
+.ico{
+  color: white;
+  margin: 20px 10px;
 }
