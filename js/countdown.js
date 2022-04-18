@@ -1,9 +1,8 @@
 $(function(){
 
-    $('.countdown').countdown('2017/11/10', function(event) {
+    $('.countdown').countdown('2022/04/25', function(event) {
         $(this).html(event.strftime('%w %d %H %M %S'));
 
     });
-    console.log("Website creator : Shakti Singh , Shubham Kushwah and Aayush kumar");
 
 });
