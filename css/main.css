@@ -1,4 +1,21 @@
+.float-right{
+  float: none;
+}
+.float-left{
+  float: none;
+}
 
+@media(max-width: 500px){
+  .float-left{
+    float: none !important;
+  }
+  .float-right{
+    float: none !important;
+  }
+  .class1{
+    display: flex;
+  }
+}
 html, body {
     width: 100%;
 }
@@ -199,6 +216,47 @@ footer p {
 
 }
 
+/* hover css */
+.partner {
+  background-color: #f8f8f8;
+}
+.partner .partner-box {
+  display: block;
+  opacity: 0.3;
+  height: 150px;
+  width: 150px;
+  margin: 25px auto;
+  -webkit-transition: 0.5s all linear;
+          transition: 0.5s all linear;
+}
+.partner .partner-box:hover {
+  opacity: 1;
+}
+.partner .partner-box-1 {
+  background: url(../img/dcoder.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-2 {
+  background: url(../img/download.png) no-repeat center center/contain;
+}
+.partner .partner-box-3 {
+  background: url(../img/hovercss_imgs/neural\ ai.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-4 {
+  background: url(../img/IEEE_DTU_Logo.png) no-repeat center center/contain;
+}
+.partner .partner-box-5 {
+  background: url(../img/site_dtu.jpg) no-repeat center center/contain;
+}
+.partner .partner-box-6 {
+  background: url(../img/hovercss_imgs/sr_dtu.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-7 {
+  background: url(../img/partner-1.png) no-repeat center center/contain;
+}
+.partner .partner-box-8 {
+  background: url(../img/partner-4.png) no-repeat center center/contain;
+}
+
 .sponsors {
   background-color: #f8f8f8;
   text-align: center;
@@ -269,30 +327,26 @@ button {
     font-size: 20px !important;
   }
   .social-link img , .numbers img{
-    margin-right: 1em;
     font-size: 40px;
-    float: left;
   }
 
   .mail,.insta,.numbers li {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
   .social-media a:hover {
     color: #adadad;
   }
   .social-media, .numbers{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   }
   .numbers a {
     display: flex;
     flex-wrap: nowrap;
   }
 
-  @media (max-width:768px) and (min-width:375px){
+  @media (max-width:768px){
       .map{
         height: 300px;
         width: 300px;
@@ -335,14 +389,7 @@ button {
 .section-header {
   text-align: center;
 }
-/* .section-header h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin: 0;
-  color: #012970;
-  text-transform: uppercase;
-} */
+
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
@@ -359,46 +406,6 @@ button {
 }
 
 
-/* hover css */
-.partner {
-  background-color: #f8f8f8;
-}
-.partner .partner-box {
-  display: block;
-  opacity: 0.3;
-  height: 150px;
-  width: 150px;
-  margin: 25px auto;
-  -webkit-transition: 0.5s all linear;
-          transition: 0.5s all linear;
-}
-.partner .partner-box:hover {
-  opacity: 1;
-}
-.partner .partner-box-1 {
-  background: url(../img/dcoder.jfif) no-repeat center center/contain;
-}
-.partner .partner-box-2 {
-  background: url(../img/download.png) no-repeat center center/contain;
-}
-.partner .partner-box-3 {
-  background: url(../img/hovercss_imgs/neural\ ai.jfif) no-repeat center center/contain;
-}
-.partner .partner-box-4 {
-  background: url(../img/IEEE_DTU_Logo.png) no-repeat center center/contain;
-}
-.partner .partner-box-5 {
-  background: url(../img/site_dtu.jpg) no-repeat center center/contain;
-}
-.partner .partner-box-6 {
-  background: url(../img/hovercss_imgs/sr_dtu.jfif) no-repeat center center/contain;
-}
-.partner .partner-box-7 {
-  background: url(../img/partner-1.png) no-repeat center center/contain;
-}
-.partner .partner-box-8 {
-  background: url(../img/partner-4.png) no-repeat center center/contain;
-}
 
 /* about css */
 
