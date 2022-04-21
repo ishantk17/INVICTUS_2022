@@ -1,4 +1,21 @@
+.float-right{
+  float: none;
+}
+.float-left{
+  float: none;
+}
 
+@media(max-width: 500px){
+  .float-left{
+    float: none !important;
+  }
+  .float-right{
+    float: none !important;
+  }
+  .class1{
+    display: flex;
+  }
+}
 html, body {
     width: 100%;
 }
@@ -50,10 +67,6 @@ div.card > a {
     text-decoration: none;
 }
 
-.navbar-dark .navbar-brand img {
-    width: 42px;
-    height: 38px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -152,7 +165,7 @@ span.time_card {
 
 .card-body{
   text-align: center;
-  color: #0000FF;
+  color:	#0000FF;
 }
 
 .card img {
@@ -185,7 +198,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #263238;
-    padding: 15px;
+    padding: 5px;
 }
 
 footer p {
@@ -216,68 +229,102 @@ footer p {
 
 }
 
-@media screen and (max-width: 991px) {
-
+/* hover css */
+.partner {
+  background-color: #f8f8f8;
 }
+.partner .partner-box {
+  display: block;
+  opacity: 0.3;
+  height: 150px;
+  width: 150px;
+  margin: 25px auto;
+  -webkit-transition: 0.5s all linear;
+          transition: 0.5s all linear;
+}
+.partner .partner-box:hover {
+  opacity: 1;
+}
+.partner .partner-box-1 {
+  background: url(../img/dcoder.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-2 {
+  background: url(../img/download.png) no-repeat center center/contain;
+}
+.partner .partner-box-3 {
+  background: url(../img/hovercss_imgs/neural\ ai.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-4 {
+  background: url(../img/IEEE_DTU_Logo.png) no-repeat center center/contain;
+}
+.partner .partner-box-5 {
+  background: url(../img/site_dtu.jpg) no-repeat center center/contain;
+}
+.partner .partner-box-6 {
+  background: url(../img/hovercss_imgs/sr_dtu.jfif) no-repeat center center/contain;
+}
+.partner .partner-box-7 {
+  background: url(../img/partner-1.png) no-repeat center center/contain;
+}
+.partner .partner-box-8 {
+  background: url(../img/partner-4.png) no-repeat center center/contain;
+}
+
 .sponsors {
-    background: rgb(31, 0, 82);
-    background: -moz-linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    background: -webkit-linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(180deg,
-        rgba(31, 0, 82, 1) 0%,
-        rgba(0, 0, 0, 1) 100%);
-    text-align: center;
-    /* Full height */
-    height: auto;
-    overflow: hidden;
-    margin-bottom: 30px;
+  background-color: #f8f8f8;
+  text-align: center;
+  /* Full height */
+  height: auto;
+  overflow: hidden;
 
-    /* Create the parallax scrolling effect */
-  }
-  .sponsors h1{
-    font-size: 10vw !important;
-    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    color: white;
-  }
-  .sponsors button {
-    border-radius: 30px;
-    padding: 20px;
-    border: 0px;
-    font-weight: 900 !important;
-    color: #fff;
-    background-color: rgb(40, 0, 148);
-  }
-  .logo-containerUnique img {
-    max-width: 250px;
-    max-height: 150px;
-    margin: 3em 2%;
+  /* Create the parallax scrolling effect */
+}
+.sponsors h1{
+  font-size: 0.5vw !important;
+  font-weight: 700;
+  color: rgb(40, 0, 148);
+}
+button {
+  border-radius: 30px;
+  padding: 20px;
+  border: 0px;
+  font-weight: 500 !important;
+  color: #fff;
+  background-color: rgb(40, 0, 148);
+}
+.logo-containerUnique img {
+  /* max-width: 250px;
+  max-height: 150px; */
+  width: 150px;
+  height: 150px;
+  opacity: 0.3;
+  -webkit-transition: 0.5s all linear;
+          transition: 0.5s all linear;
+}
 
-  }
-  .contact {
-    background: rgb(0, 0, 0);
-    height: auto;
-    padding-bottom: 3rem;
-    background: rgb(12, 63, 159);
-    background: -moz-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    background: linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3f9f", endColorstr="#000000", GradientType=1);
-    text-align: center;
-  }
-  .mainflex{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px;
-    flex-wrap: wrap;
-  }
-  .flex1, .flex2 {
-    width: 100%;
-  }
+.logo-containerUnique img:hover{
+  opacity: 1;
+}
+
+.contact {
+  background: rgb(0, 0, 0);
+  height: auto;
+  padding-bottom: 3rem;
+  background: rgb(12, 63, 159);
+  background: -moz-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(0deg, rgba(12, 63, 159, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c3f9f", endColorstr="#000000", GradientType=1);
+  text-align: center;
+}
+
+.mainflex{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 40px;
+  flex-wrap: wrap;
+}
+
   .instaIcon{
     float: left;
     font-size: 20px;
@@ -293,33 +340,26 @@ footer p {
     font-size: 20px !important;
   }
   .social-link img , .numbers img{
-    margin-right: 1em;
     font-size: 40px;
-    float: left;
   }
 
   .mail,.insta,.numbers li {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
   .social-media a:hover {
     color: #adadad;
   }
   .social-media, .numbers{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   }
   .numbers a {
     display: flex;
     flex-wrap: nowrap;
   }
-  .map{
-    height: 400px;
-    width: 600px;
-  }
-  @media (max-width:768px) and (min-width:375px){
+
+  @media (max-width:768px){
       .map{
         height: 300px;
         width: 300px;
@@ -338,24 +378,109 @@ footer p {
   .contact{
       margin-top: 0px;
   }
+  .float-right{
+    float: right;
+  }
   #ContactUsH{
-    font-size: 10vw !important;
+    padding-top: 40px;
+    font-size: 5vw !important;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     font-weight: 900;
     color: white;
   }
-  .sponsors{
-      margin-bottom: 0px;
-      padding-bottom: 50px;
-  }
-
 
 
 .date_card:hover{
   font-weight: bold;
   color:white;
 }
+.btn-inv{
+  border-radius:10%;
 
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+@media (max-width: 768px) {
+  .section-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+
+
+/* about css */
+
+.about {
+}
+.about .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: #2c4964;
+}
+.about .content ul {
+  text-align: justify;
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  padding-bottom: 10px;
+}
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #5846f9;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about .content .read-more {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 50px 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  position: relative;
+}
+.about .content .read-more:hover {
+  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+}
+.about .content .read-more i {
+  font-size: 22px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.footer{
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 1.25rem;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ico{
+  color: white;
+  margin: 20px 10px;
+}
 .time_card:hover{
   font-weight: bold;
   color:white;
@@ -372,4 +497,3 @@ footer p {
 
 .ar{
   font-size: 14.9px;
-}
