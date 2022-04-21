@@ -61,7 +61,10 @@ body {
 }
 
 .btn {
-	border-radius: 0;
+	border-radius: 10;
+}
+.reg-btn{
+  width: 10%;
 }
 
 div.card > a {
@@ -83,6 +86,16 @@ span.date_card {
 	border-radius: 5%;
 	opacity: 0.7;
 	padding: 5px 8px;
+	margin-right: 15px;
+	margin-left: 17px;
+}
+
+span.time_card {
+	background-color: #152127;
+	border-radius: 5%;
+	opacity: 0.7;
+	padding: 5px 8px;
+	margin-right: 15px;
 }
 
 .carousel-item {
@@ -150,6 +163,7 @@ span.date_card {
 
 .card-body {
 	text-align: center;
+	color: #0000ff;
 }
 
 .card img {
@@ -327,6 +341,7 @@ button {
 	font-size: 20px;
 	margin-right: 5px;
 }
+
 .phoneIcon {
 	float: left;
 	margin-right: 0.5em;
@@ -484,4 +499,21 @@ button {
 .ico {
 	color: white;
 	margin: 20px 10px;
+}
+.time_card:hover {
+	font-weight: bold;
+	color: white;
+}
+.btn-inv {
+	border-radius: 10%;
+	position: absolute;
+	bottom: 3px;
+}
+
+.cr {
+	font-size: 14.9px;
+}
+
+.ar {
+	font-size: 14.9px;
 }
